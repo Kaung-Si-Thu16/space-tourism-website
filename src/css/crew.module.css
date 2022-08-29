@@ -1,0 +1,485 @@
+.container {
+  background-image: url("../assets/crew/background-crew-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 100vh;
+  color: white;
+}
+
+.logo {
+  margin-right: 80px;
+}
+
+.crossedLine {
+  width: 670px;
+  height: auto;
+  border: 1px solid #292b38;
+  z-index: 99;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  margin-left: 30px;
+}
+
+.nav {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(17.3px);
+  -webkit-backdrop-filter: blur(17.3px);
+  height: 80px;
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navUl {
+  display: flex;
+  list-style: none;
+  margin-inline: 310px;
+  margin-left: 110px;
+  text-transform: uppercase;
+}
+
+.navLi {
+  margin-inline: 45px;
+  letter-spacing: 1px;
+  font-weight: 100 !important;
+  cursor: pointer;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.navLi a:hover {
+  border-bottom: 5px solid hsl(0, 0%, 60%);
+  padding-bottom: 25px;
+}
+
+.navLi a {
+  text-decoration: none;
+  color: white;
+  transition: all linear 0.3s;
+  /* font-weight: 200; */
+}
+
+.mobileNav {
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+  top: 32px;
+  display: none;
+}
+
+.overlay {
+  width: 300px;
+  height: 600px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all linear 0.3s;
+  /* From https://css.glass */
+  background: rgba(101, 101, 101, 0.65);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.8px);
+  -webkit-backdrop-filter: blur(15.8px);
+  display: none;
+  z-index: 9;
+}
+
+.cancleIcon {
+  font-size: 25px;
+  position: absolute;
+  right: 30px;
+  top: 32px;
+  cursor: pointer;
+}
+
+.mobileNavLists {
+  list-style: none;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+.mobileNavItems {
+  font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 50px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.mobileNavItems a {
+  text-decoration: none;
+  color: white;
+}
+
+.mobileNavName:hover {
+  border-bottom: 3px solid hsl(0, 0%, 60%);
+  padding-bottom: 10px;
+}
+
+.mobileNavName {
+  margin-left: 10px;
+  transition: all linear 0.3s;
+}
+
+#mobileCrew {
+  border-bottom: 3px solid white;
+  padding-bottom: 10px;
+}
+
+.nums {
+  padding-right: 10px;
+}
+
+.navName {
+  color: hsl(0, 0%, 80%);
+  font-weight: 200;
+}
+
+.num, .title {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.topTexts {
+    margin-left: 340px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.num {
+    margin-right: 30px;
+    color: hsl(0, 0%, 60%);
+}
+
+.mainContents {
+    display: flex;
+}
+
+.position, .name {
+    text-transform: uppercase;
+}
+
+.nameAndPosition {
+    margin-left: 350px;
+    margin-top: 180px;
+    font-family: serif;
+    margin-bottom: 50px;
+}
+
+.position {
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    color: hsl(0, 0%, 60%);
+    font-family: 'Bellefair', serif;
+}
+
+.name {
+    font-size: 48px;
+    letter-spacing: 2px;
+    font-family: 'Bellefair', serif;
+}
+
+.info {
+    margin-left: 350px;
+    width: 570px;
+    margin-right: 100px;
+    color: #d2d8f9;
+    line-height: 32px;
+    font-size: 14px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.imgDesktop {
+    position: absolute;
+    bottom: 0;
+}
+
+.dotContainer {
+    display: flex;
+    margin-left: 350px;
+    margin-top: 60px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background: hsl(0, 0%, 40%);
+    margin: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active {
+  background-color: white;
+}
+
+#crew {
+    border-bottom: 5px solid white;
+    padding-bottom: 25px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    background-image: url("../assets/crew/background-crew-tablet.jpg");
+  }
+
+  .crossedLine {
+    display: none;
+  }
+
+  .header {
+    margin-left: 0;
+  }
+
+  .logo {
+    margin-top: -10px;
+  }
+
+  .nav {
+    width: 480px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .navUl {
+    margin-inline: 45px;
+  }
+
+  .navLi {
+    margin-inline: 20px;
+  }
+
+  .nums {
+    display: none;
+  }
+
+  #crew {
+    padding-bottom: 44px;
+  }
+
+  .topTexts {
+    margin-left: 6%;
+    margin-top: 3%;
+    font-size: 28px;
+  }
+
+  .mainContents {
+    flex-flow: column;
+  }
+
+  .nameAndPosition {
+    margin: 0;
+    margin-top: 5%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nameAndPosition br {
+    display: none;
+  }
+
+  .position {
+    margin-bottom: 10px;
+  }
+
+  .info {
+    margin: 0;
+    margin-top: 2%;
+    font-size: 22px;
+    margin-inline: auto;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 38px;
+    width: 640px;
+  }
+
+  .dotContainer {
+    margin: 0;
+    justify-content: center;
+    margin-top: 3%;
+  }
+
+  .img {
+    position: absolute;
+    bottom: 0;
+    max-width: 50%;
+    margin-left: 25%;
+  }
+}
+
+@media (max-height: 1050px) {
+  .img {
+    max-width: 40%;
+    margin-left: 32%;
+  }
+}
+
+@media (min-height: 1200px) and (max-height: 1400px) {
+  .nav {
+    width: 530px;
+    height: 150px;
+    font-size: 22px;
+  }
+
+  .logo {
+    margin-top: 10px;
+  }
+  
+  #crew {
+    padding-bottom: 56px;
+  }
+
+  .topTexts {
+    margin-top: 5%;
+    font-size: 34px;
+  }
+
+  .nameAndPosition {
+    margin-bottom: 3%;
+  }
+
+  .info {
+    font-size: 24px;
+    margin-bottom: 3%;
+  }
+
+  .img {
+    width: 100%;
+  }
+}
+
+@media (min-height: 1200px) and (max-height: 1400px) {
+  .imgDesktop {
+    margin-left: 23%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    background-image: url("../assets/crew/background-crew-mobile.jpg");
+    height: auto;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .crossedLine {
+    display: none;
+  }
+
+  .logo {
+    margin-left: -30px;
+    margin-top: -20px;
+  }
+
+  .header {
+    margin: 0;
+  }
+
+  .mobileNav {
+    display: block;
+  }
+
+  .topTexts {
+    margin: 0;
+    /* margin-left: 30px; */
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  .mainContents {
+    flex-flow: column-reverse;
+  }
+
+  .nameAndPosition {
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 5px;
+  }
+
+  .rightSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img {
+    margin-top: 30px;
+    margin-left: -4px;
+    margin-bottom: -10px;
+    max-width: 60%;
+  }
+
+  #brOne {
+    display: none;
+  }
+
+  #brTwo {
+    display: none;
+  }
+
+  .leftSide {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .position {
+    font-size: 16px;
+  }
+
+  .name {
+    font-size: 18px;
+    margin-top: -20px;
+  }
+
+  .info {
+    margin: 0;
+    margin-top: 20px;
+    width: 300px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    text-align: center;
+    margin-inline: auto;
+    font-size: 16px;
+  }
+
+  .dotContainer {
+    margin: 0;
+    width: fit-content;
+    margin-inline: auto;
+    position: relative;
+    bottom: 280px;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-height: 920px) and (min-height: 750px) {
+  .container {
+    height: 100vh;
+  }
+}
